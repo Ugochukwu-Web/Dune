@@ -1,0 +1,159 @@
+@import './normalize.css';
+
+:root {
+    --btn-green: #118C4F;
+    --text-color: #1D1D1D; 
+}   
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Typography */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Button */
+.btn {
+    border-radius: 20px;
+    border: 0;
+}
+
+.btn-green {
+    background-color: var(--btn-green);
+    color: #fff;
+}
+
+.nav .btn {
+    margin-top: .8rem;
+    font-size: inherit;
+    width: 100%;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #064b29;
+}
+
+/* Nav */
+.nav {
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+}
+
+.form-control {
+    border: 0;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+.form-inline {
+    flex-wrap: nowrap;
+    background: #fff;
+    border-bottom: 1px solid #ced4da;
+    background-color: #F4F4F7;
+    margin-top: .5rem;
+    margin-bottom: .7rem;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+}
+
+.nav__logo {
+    width: 50%;
+}
+
+.navbar-toggler.collapsed {
+    border: 1px solid #00000047;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url(../images/menu.svg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/close.svg);
+}
+
+.nav__search-logo {
+    transform: scale(.7);
+}
+
+.dropdown-menu {
+    border: 0;
+    background-color: inherit;
+    font-size: inherit;
+}
+
+@media screen and (min-width:576px){
+    .form-control.nav__search-input {
+        width: 100%;
+    }
+
+    .form-inline.nav__search {
+        margin-bottom: 1rem;
+    }
+
+    .nav .btn {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width:820px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+    
+    .nav .navbar-collapse {
+        display: grid!important;
+        grid-template-columns: 80% 20%;
+    }
+
+    .nav__search__list,
+    .nav__login {
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+    }
+
+    .nav__search__list {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .form-inline {
+        flex-grow: 1;
+        margin-right: 2rem;
+    }
+    
+    .nav-item {
+        margin-right: 1rem;
+    }
+
+    .nav__login {
+        justify-content: space-evenly;
+    }
+
+    .nav .btn {
+        margin-top: 0;
+    }
+
+}
