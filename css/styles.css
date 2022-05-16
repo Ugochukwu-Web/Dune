@@ -20,6 +20,7 @@ body {
     font-family: 'Nunito', sans-serif;
     color: var(--text-color);
     font-size: 1.3rem;
+    background-color: #FAF9F6;
 }
 
 h1 {
@@ -53,16 +54,11 @@ a {
     border: 1px solid black;
 }
 
-/* Image */
-img {
-    width: 50%;
-}
-
 /* Nav */
 .nav {
-    font-size: 1.3rem;
-    font-family: 'Nunito', sans-serif;
     color: var(--text-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
 }
 
 .form-control {
@@ -72,18 +68,18 @@ img {
 }
 
 .form-inline {
-    flex-wrap: nowrap;
+    background-color: #F4F4F7;
     background: #fff;
     border-bottom: 1px solid #ced4da;
-    background-color: #F4F4F7;
-    margin-top: .5rem;
-    margin-bottom: .7rem;
-    padding: .2rem .5rem;
     border-radius: 5px;
+    flex-wrap: nowrap;
+    margin-bottom: .7rem;
+    margin-top: .5rem;
+    padding: .2rem .5rem;
 }
 
 .nav__logo {
-    width: 50%;
+    width: 70%;
 }
 
 .navbar-toggler.collapsed {
@@ -110,7 +106,7 @@ img {
 }
 
 .nav__search-logo {
-    transform: scale(.7);
+    transform: scale(.5);
 }
 
 .dropdown-menu {
@@ -177,7 +173,7 @@ img {
 
 /* Hero */
 .containers.hero {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .hero__image {
@@ -185,9 +181,9 @@ img {
 }
 
 .containers {
-    padding: 0 2rem;
-    max-width: 1440px;
     margin: auto;
+    max-width: 1440px;
+    padding: 0 2rem;
 }
 
 .hero__slogan {
@@ -200,8 +196,8 @@ img {
 .hero__slogan-star,
 .tagline-play {
     margin-right: .5rem;
-    width: 19px;
     transform: translateY(-1px);
+    width: 19px;
 }
 
 .hero__heading {
